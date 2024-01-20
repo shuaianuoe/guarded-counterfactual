@@ -4,7 +4,7 @@ This is the code repository for guarded counterfactual (Paper ID: SIGMOD-709).
 
 The codes are build upon Carla, which is a popular python library to benchmark counterfactual explanations. 
 
-In order to successfully run the code, you must successfully install Carla via pip
+In order to successfully run the code, you **must successfully install Carla** via pip
 
 ```
 pip install carla-recourse
