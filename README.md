@@ -4,7 +4,7 @@ This is the code repository for guarded counterfactual (Paper ID: SIGMOD-709).
 
 The codes are build upon Carla, which is a popular python library to benchmark counterfactual explanations. 
 
-In order to successfully run the code, you must successfully install Carla via pip
+In order to successfully run the code, you **must successfully install Carla** via pip
 
 ```
 pip install carla-recourse
@@ -29,6 +29,22 @@ python test_competitors.py
 ```
 
 To test our proposed streaming algorithms, run below script:
+```
+python test_stream.py
+```
+
+Testing other CPC variants is also simple. For instance, if you want to test maxmin and maxsum, just run below script:
+```
+python test_max_min_sum.py
+```
+
+If you want to test package query, you just need to set cf_method='pq' in `config.yaml` and then run
+```
+python test_packqry.py
+```
+Please note that we have almost never used the source code for package query, as our framework uses inference instances collected at the client side during model serving does not require the use of RDBMS.
+
+For other streaming variants, set cf_method='gops' or 'gsv' or 'dr' in `config.yaml` and then run
 ```
 python test_stream.py
 ```
