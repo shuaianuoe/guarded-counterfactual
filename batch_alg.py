@@ -1,5 +1,37 @@
 # -*- coding: utf-8 -*-
 
+from itertools import combinations
+
+def find_opt_min_cover(universe, subsets, feat_num):
+    for i in range(1, len(subsets) + 1):
+
+        for combo in combinations(subsets.keys(), i):
+            combined = set() 
+            for key in combo:
+                combined.update(subsets[key])
+            if len(combined) >= feat_num:  
+                return list(combo)
+    return None  
+    
+   
+def find_opt_max_coverage(universe, subsets, cfs_num):
+    best_coverage = 0
+    best_combination = None
+    
+    for combo in combinations(subsets.keys(), cfs_num):
+        coverage = set()
+        for key in combo:
+            coverage.update(subsets[key])
+        if len(coverage) > best_coverage:
+            best_coverage = len(coverage)
+            best_combination = combo
+            
+            if coverage == universe:
+                break
+    
+    return list(best_combination)
+
+
 def greedy_maximum_coverage(universe, subsets_dict, cfs_num):
 
     uncovered_elements = set(universe)

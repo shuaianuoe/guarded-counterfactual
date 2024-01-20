@@ -6,3 +6,6 @@ feat_num: 4 # desired number of changed features, i.e. p
 inference_frac: 1 # fix
 instance_num: 10 # number of tested instances: 1000 for adult; 100 for compas; 300 for credit; 10 for loan
 privacy: true # true is to test privacy; false is to test counterfactual quality 
+epsilon: 0.1 # GSV
+beta: 1.1 # GOPS
+tau: 0.1 # for package query
