@@ -94,7 +94,7 @@ print("factuals size", factuals.shape[0])
 if privacy==True:
 
     filename = f'privacy-data/{data_name}_our_instance{instance_num}_imbalance_rate{imbalance_rate}.csv'
-    factuals = factuals.sample(frac=inference_frac, random_state=42)  # 增加生成结果的随机性
+    factuals = factuals.sample(frac=inference_frac, random_state=42)
      
     factuals = factuals.sample(n=instance_num, random_state=42)
     df_test_pos = df_test_pos.sample(n=min(len(df_test_pos), int(instance_num*imbalance_rate)), random_state=42)
