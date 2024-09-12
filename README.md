@@ -4,11 +4,18 @@ This is the code repository for "Counterfactual Explanation at Will, with Zero P
 
 The codes are build upon Carla, which is a popular python library to benchmark counterfactual explanations. 
 
-In order to successfully run the code, you **must successfully install Carla** via pip
+In order to successfully run the code, you **must first successfully install Carla** via pip
 
 ```
 pip install carla-recourse
 ```
+
+Besides Carla, the following packages are also required.
+
+```
+pip install carla-recourse
+```
+
 
 We should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
 
