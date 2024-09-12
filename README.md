@@ -1,6 +1,6 @@
 # Guarded-counterfactual
 
-This is the code repository for guarded counterfactual (Paper ID: SIGMOD-709).
+This is the code repository for "Counterfactual Explanation at Will, with Zero Privacy Leakage".
 
 The codes are build upon Carla, which is a popular python library to benchmark counterfactual explanations. 
 
