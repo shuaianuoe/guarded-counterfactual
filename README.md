@@ -45,7 +45,7 @@ To test our proposed streaming algorithms, run below script:
 python test_stream.py
 ```
 
-Testing other CPC variants is also simple. For instance, if you want to test maxmin and maxsum, just run below script:
+Testing other variants is also simple. For instance, if you want to test maxmin and maxsum, just run below script:
 ```
 python test_max_min_sum.py
 ```
@@ -61,7 +61,7 @@ For other streaming variants, set cf_method='gops' or 'gsv' or 'dr' in `config.y
 python test_stream.py
 ```
 
-## Section 2: test  model attacks
+## Section 2: test defending model attacks
 
 Set privacy to True in `config.yaml`.
 
