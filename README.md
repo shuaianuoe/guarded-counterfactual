@@ -13,13 +13,18 @@ pip install carla-recourse
 Besides Carla, the following packages are also required.
 
 ```
-pip install carla-recourse
+gower 0.1.2
+pandas 1.5.3
+numpy 1.23.0
+scipy 1.11.1
 ```
 
 
-We should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
+First, we should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
 
 The original dataset can be found in the `datasets` folder.
+
+Note that all the scripts should run on Windows 10/Ubuntu 14.04 and later systems.
 
 ## Section 1:  test the counterfactual quality
 
