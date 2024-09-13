@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from our_tfd import greedy_maximum_coverage,greedy_set_cover
+from tfd import greedy_maximum_coverage, greedy_set_cover
 import math
 import random
 
