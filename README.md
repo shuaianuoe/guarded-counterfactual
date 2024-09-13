@@ -1,18 +1,30 @@
 # Guarded-counterfactual
 
-This is the code repository for guarded counterfactual (Paper ID: SIGMOD-709).
+This is the code repository for "Counterfactual Explanation at Will, with Zero Privacy Leakage".
 
 The codes are build upon Carla, which is a popular python library to benchmark counterfactual explanations. 
 
-In order to successfully run the code, you **must successfully install Carla** via pip
+In order to successfully run the code, you **must first successfully install Carla** (https://github.com/carla-recourse/CARLA) via pip
 
 ```
 pip install carla-recourse
 ```
 
-We should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
+Besides Carla, the following packages are also required.
 
-The original dataset can be found in the `datasets` folder.
+```
+gower 0.1.2
+pandas 1.5.3
+numpy 1.23.0
+scipy 1.11.1
+```
+
+
+First, we should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
+
+The original dataset can be found in the `datasets` folder. All the processed datasets are read by Carla.
+
+Note that all the scripts should run on Windows 10/Ubuntu 14.04 and later systems, with Python 3.7 or higher.
 
 ## Section 1:  test the counterfactual quality
 
@@ -33,7 +45,7 @@ To test our proposed streaming algorithms, run below script:
 python test_stream.py
 ```
 
-Testing other CPC variants is also simple. For instance, if you want to test maxmin and maxsum, just run below script:
+Testing other variants is also simple. For instance, if you want to test maxmin and maxsum, just run below script:
 ```
 python test_max_min_sum.py
 ```
@@ -49,7 +61,7 @@ For other streaming variants, set cf_method='gops' or 'gsv' or 'dr' in `config.y
 python test_stream.py
 ```
 
-## Section 2: test  model attacks
+## Section 2: test defending model attacks
 
 Set privacy to True in `config.yaml`.
 
