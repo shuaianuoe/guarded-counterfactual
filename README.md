@@ -22,9 +22,9 @@ scipy 1.11.1
 
 First, we should also configure a configuration file. The exact meaning of each parameter has been noted in `config.yaml`.
 
-The original dataset can be found in the `datasets` folder.
+The original dataset can be found in the `datasets` folder. All the processed datasets are read by Carla.
 
-Note that all the scripts should run on Windows 10/Ubuntu 14.04 and later systems.
+Note that all the scripts should run on Windows 10/Ubuntu 14.04 and later systems, with Python 3.7 or higher.
 
 ## Section 1:  test the counterfactual quality
 
