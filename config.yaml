@@ -1,4 +1,4 @@
-cf_method: our # dice, cchvae, gs, face
+cf_method: our # dice, cchvae, gs, face, max-sum, max-min, our
 cfs_num: 5 # desired number of counterfactuals, i.e. k
 data_name: loan # adult, loan, give_me_some_credit, compas
 eva_frac: 0.75 # fix

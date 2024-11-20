@@ -33,7 +33,7 @@ feat_num = config['feat_num']
 # the number of cfs needed, i.e., size. i.e., given a size, then go through the individual methods show the diversity, similarity, sparsity, validity.
 cfs_num = config['cfs_num']
 
-sDBC = False
+sDBC = True
 
 print("data_name", data_name)
 print("*"*20)
